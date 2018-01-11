@@ -1,7 +1,10 @@
-def fib (n):
-	if n < 2:
-		return n
-	return fib(n-3)+fib(n-1)
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
 
 
 n = input("Enter the number of times you want to input n :")
